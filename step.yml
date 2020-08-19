@@ -1,0 +1,61 @@
+title: Secure Azure Download
+summary: Secure Azure Download
+description: |-
+  Secure Azure Download
+website: https://github.com/DamienBitrise/bitrise-secure-azure-download
+source_code_url: https://github.com/DamienBitrise/bitrise-secure-azure-download
+support_url: https://github.com/DamienBitrise/bitrise-secure-azure-download/issues
+
+project_type_tags:
+  - ios
+  - android
+  - cordova
+  - ionic
+  - react-native
+  - flutter
+
+type_tags:
+  - utility
+
+is_requires_admin_user: true
+is_always_run: false
+is_skippable: false
+run_if: ".IsCI"
+
+inputs:
+- account_name: 
+  opts:
+    title: Azure Account Name
+    summary: Azure Account Name
+    description: Azure Account Name
+    is_required: true
+    is_sensitive: true
+- account_key: 
+  opts:
+    title: Azure Key
+    summary: Azure Key
+    description: Azure Key
+    is_required: true
+    is_sensitive: true
+- container: 
+  opts:
+    title: Azure Container Name
+    summary: Azure Container Name
+    description: Azure Container Name
+    is_required: true
+    is_sensitive: false
+- object: 
+  opts:
+    title: Azure Object
+    summary: Azure Object to save as
+    description: Azure Object to save as
+    is_required: true
+    is_sensitive: false
+- filename: 
+  opts:
+    title: Azure Filename
+    summary: Azure Filename to upload
+    description: Azure Filename to upload
+    is_required: true
+    is_sensitive: false
+outputs:
