@@ -8,7 +8,7 @@ Simple Ruby based secure Azure Download
 
 **bitrise.yml snippet:**
 
-- git::https://github.com/DamienBitrise/bitrise-secure-azure-download@master:
+    - git::https://github.com/DamienBitrise/bitrise-secure-azure-download@master:
         inputs:
         - account_name: "$AZURE_ACCOUNT_NAME"
         - account_key: "$AZURE_ACCOUNT_KEY"
