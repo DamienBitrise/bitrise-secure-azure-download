@@ -32,9 +32,9 @@ inputs:
     is_sensitive: true
 - account_key: 
   opts:
-    title: Azure Key
-    summary: Azure Key
-    description: Azure Key
+    title: Azure Account Key
+    summary: Azure Account Key
+    description: Azure Account Key
     is_required: true
     is_sensitive: true
 - container: 
